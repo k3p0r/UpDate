@@ -1,1 +1,1 @@
-https://k3p0r.github.io/frontend-start/UpDate
+https://k3p0r.github.io/UpDate/
