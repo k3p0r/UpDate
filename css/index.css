@@ -139,6 +139,10 @@
 	cursor: pointer;
 }
 
+.discover__button.active {
+	border-bottom: 4px solid #19191c;
+}
+
 .discover__cards {
 	display: flex;
 	gap: 20px;
