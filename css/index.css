@@ -1,3 +1,15 @@
+.offer__holder {
+	padding-top: 188px;
+}
+
+.offer:before {
+	content: url("../img/background_gradient.png");
+	position: absolute;
+	right: 0px;
+	z-index: -1;
+	top: 155px;
+}
+
 .offer__marketer {
 	right: 0px;
 	top: 237px;

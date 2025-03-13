@@ -99,14 +99,6 @@ body {
 	background: url("../img/man.png") 142% 115% no-repeat;
 }
 
-.offer:before {
-	content: url("../img/background_gradient.png");
-	position: absolute;
-	right: 0px;
-	z-index: -1;
-	top: 155px;
-}
-
 .offer::after {
 	content: "";
 	position: absolute;
@@ -122,7 +114,6 @@ body {
 
 .offer__holder {
 	width: 648px;
-	padding-top: 188px;
 	background: url(../img/background_explore.png) 100% 100% no-repeat;
 }
 
