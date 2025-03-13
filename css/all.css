@@ -44,6 +44,12 @@ body {
 	font-weight: 600;
 }
 
+.section__title {
+	font-size: 58px;
+	line-height: 70px;
+	font-weight: 700;
+}
+
 .link {
 	color: #19191c;
 	text-decoration: none;
@@ -85,18 +91,95 @@ body {
 }
 
 .offer {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
+	padding-bottom: 232px;
+	background: url("../img/man.png") 142% 115% no-repeat;
+}
+
+.offer::after {
+	content: "";
+	position: absolute;
+	width: 467px;
+	height: 532px;
+	background: #504dee;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	border-top-left-radius: 46%;
+	border-top-right-radius: 46%;
 }
 
 .offer__holder {
 	width: 648px;
+	padding-top: 188px;
+	background: url(../img/background_explore.png) 100% 100% no-repeat;
 }
 
 .offer__title {
-	font-size: 58px;
+	font-size: 62px;
 	line-height: 70px;
 	font-weight: 700;
+	margin-bottom: 18px;
+}
+
+.offer__description {
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 62px;
+	letter-spacing: 0.3px;
+}
+
+.offer__sale {
+	margin-bottom: 8px;
+}
+
+.offer__time {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.offer__button {
+	background: #504dee;
+	color: #fbfbfc;
+	border: none;
+	padding: 16px 39px;
+	line-height: 22px;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 110px;
+}
+
+.offer__link {
+	font-weight: 700;
+	text-decoration: none;
+	color: #504dee;
+}
+
+.offer_list {
+	list-style: none;
+	flex-grow: 1;
+	position: relative;
+}
+
+.offer__item {
+	position: absolute;
+	border: 2px solid #19191c;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 28px;
+	padding: 11px 36px;
+}
+
+.offer__item-link {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 22px;
+	color: #19191c;
+	text-decoration: none;
 }
 
 .footer {

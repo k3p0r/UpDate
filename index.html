@@ -8,6 +8,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 		<link rel="icon" href="./svg/logo.svg" type="image/svg+xml" />
 		<link rel="stylesheet" href="./css/all.css" />
+		<link rel="stylesheet" href="./css/index.css" />
 		<title>UpDate</title>
 	</head>
 	<body>
@@ -47,61 +48,63 @@
 					<h1 class="offer__title">Explore thousands of hands-on creative classes.</h1>
 					<p class="offer__description">
 						Start learning for
-						<a href="#">free</a>
+						<a href="#" class="offer__link">free</a>
 					</p>
 					<button class="offer__button">Choose a course</button>
-					<h2 class="offer__sale">50%</h2>
+					<h2 class="section__title offer__sale">50%</h2>
 					<h3 class="offer__time">
 						<time datetime="P24DT17H44M16S">24 Days 17:44:16</time>
 					</h3>
 				</div>
-				<ul>
-					<li>
-						<a href="#">Marketer</a>
+				<ul class="offer_list">
+					<li class="offer__item offer__marketer">
+						<a class="offer__item-link" href="#">Marketer</a>
 					</li>
-					<li>
-						<a href="#">Illustrator</a>
+					<li class="offer__item offer__illustrator">
+						<a class="offer__item-link" href="#">Illustrator</a>
 					</li>
-					<li>
-						<a href="#">Animator</a>
+					<li class="offer__item offer__animator">
+						<a class="offer__item-link" href="#">Animator</a>
 					</li>
-					<li>
-						<a href="#">Programmer</a>
+					<li class="offer__item offer__programmer">
+						<a class="offer__item-link" href="#">Programmer</a>
 					</li>
-					<li>
-						<a href="#">Designer</a>
+					<li class="offer__item offer__designer">
+						<a class="offer__item-link" href="#">Designer</a>
 					</li>
-					<li>
-						<a href="#">Photographer</a>
+					<li class="offer__item offer__photographer">
+						<a class="offer__item-link" href="#">Photographer</a>
 					</li>
 				</ul>
 			</section>
 			<section class="learn">
-				<div>
-					<h2 class="learn__title">What you will learn</h2>
-					<h3 class="learn__description">Up-to-date knowledge from recognized market experts for beginners and practitioners</h3>
-					<h3 class="learn__description">
-						On the platform, you can gain knowledge on current topics and in-demand skills. All courses are aimed at practice: we monitor the relevance of the material
-						and help with employment and internship
-					</h3>
-				</div>
-				<div class="learn__counters">
-					<div class="learn__counter-item">
-						<h3 class="learn__counter-number">56</h3>
-						<h3 class="learn__counter-description">Courses</h3>
+				<div class="container learn__container">
+					<div class="learn__text">
+						<h2 class="section__title learn__title">What you will learn</h2>
+						<h3 class="learn__description">Up-to-date knowledge from recognized market experts for beginners and practitioners</h3>
+						<h3 class="learn__description">
+							On the platform, you can gain knowledge on current topics and in-demand skills. All courses are aimed at practice: we monitor the relevance of the
+							material and help with employment and internship
+						</h3>
 					</div>
-					<div class="learn__counter-item">
-						<h3 class="learn__counter-number">108</h3>
-						<h3 class="learn__counter-description">Curators</h3>
-					</div>
-					<div class="learn__counter-item">
-						<h3 class="learn__counter-number">3 723</h3>
-						<h3 class="learn__counter-description">Graduates</h3>
+					<div class="learn__counters">
+						<div class="learn__counter-item">
+							<h3 class="section__title">56</h3>
+							<h3 class="learn__counter-description">Courses</h3>
+						</div>
+						<div class="learn__counter-item">
+							<h3 class="section__title">108</h3>
+							<h3 class="learn__counter-description">Curators</h3>
+						</div>
+						<div class="learn__counter-item">
+							<h3 class="section__title">3 723</h3>
+							<h3 class="learn__counter-description">Graduates</h3>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="discover">
-				<h2 class="discover__title">Discover Lifelong Learning</h2>
+			<section class="discover container">
+				<h2 class="section__title discover__title">Discover Lifelong Learning</h2>
 				<div class="discover__menu">
 					<ul class="discover__list">
 						<li class="discoverCategory active">
@@ -155,19 +158,17 @@
 				</div>
 			</section>
 			<section class="find-program">
-				<div class="find-program__text">
-					<h2 class="find-program__title">Can't find a suitable program?</h2>
-					<h3 class="find-program__description">We will help you with the choice!</h3>
-				</div>
-				<form action="https://fom.in.ua/echo" class="find-program__form">
-					<label for="name">
+				<div class="container find-program__container">
+					<div class="find-program__text">
+						<h2 class="section__title find-program__title">Can't find a suitable program?</h2>
+						<h3 class="find-program__description">We will help you with the choice!</h3>
+					</div>
+					<form action="https://fom.in.ua/echo" class="find-program__form">
 						<input class="find-program__input" type="text" id="name" name="name" placeholder="Name" required />
-					</label>
-					<label for="email">
 						<input class="find-program__input" type="email" id="email" name="email" placeholder="Email" required />
-					</label>
-					<button type="submit" class="find-program__button">Help me</button>
-				</form>
+						<button type="submit" class="find-program__button">Help me</button>
+					</form>
+				</div>
 			</section>
 		</main>
 		<footer class="footer">

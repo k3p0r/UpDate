@@ -1,0 +1,205 @@
+.offer__marketer {
+	right: 0px;
+	top: 237px;
+}
+
+.offer__illustrator {
+	right: 223px;
+	top: 141px;
+}
+
+.offer__animator {
+	left: 177px;
+	top: 223px;
+}
+
+.offer__programmer {
+	left: 41px;
+	top: 415px;
+}
+
+.offer__designer {
+	left: -79px;
+	top: 578px;
+}
+
+.offer__photographer {
+	left: 12px;
+	top: 733px;
+}
+
+.learn {
+	background: #19191c;
+	color: #fbfbfc;
+	padding: 168px 0 158px;
+}
+
+.learn__container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 156px;
+	justify-content: space-between;
+}
+
+.learn__title {
+	margin-bottom: 28px;
+}
+
+.learn__description {
+	color: #efeff2;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.learn__counter-description {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0%;
+}
+
+.learn__description + .learn__description {
+	margin-top: 24px;
+}
+
+.learn__text {
+	max-width: 578px;
+}
+
+.learn__counters {
+	display: flex;
+	gap: 86px;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-grow: 1;
+}
+
+.learn__counter-item {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 4px solid #efeff2;
+	padding-bottom: 20px;
+	min-width: 178px;
+}
+
+.discover {
+	margin-top: 168px;
+	margin-bottom: 168px;
+}
+
+.discover__title {
+	margin-bottom: 45px;
+	width: 40%;
+}
+
+.discover__menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 53px;
+}
+
+.discover__list {
+	display: flex;
+	gap: 53px;
+	list-style: none;
+}
+
+.discover__seeMore {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #19191c;
+	text-decoration: none;
+}
+
+.discover__button {
+	background: none;
+	border: none;
+	position: relative;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.discover__cards {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.discover__card-item img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.discover__card-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 26px;
+	margin-bottom: 11px;
+}
+
+.discover__card-length {
+	color: #6d6d77;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.find-program {
+	background-color: #deefe4;
+	padding-top: 168px;
+	padding-bottom: 168px;
+}
+
+.find-program__container {
+	display: flex;
+	gap: 10px;
+}
+
+.find-program__text {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: left;
+	max-width: 50%;
+	flex: 1;
+}
+
+.find-program__title {
+	margin-bottom: 28px;
+}
+
+.find-program__input {
+	padding-top: 24px;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+	width: 100%;
+	background: transparent;
+	font-size: 18px;
+	line-height: 28px;
+	color: #19191c;
+	border: none;
+	border-bottom: 2px solid #19191c;
+	outline: none;
+}
+
+.find-program__input + .find-program__input {
+	margin-top: 20px;
+}
+
+.find-program__button {
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 700;
+	color: #efeff2;
+	background-color: #19191c;
+	padding: 12px 35px;
+	margin-top: 63px;
+}
