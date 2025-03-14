@@ -1,9 +1,3 @@
-.offer {
-	background-image: url("../img/designer.png");
-	background-position: 133% 100%;
-	padding-bottom: 195px;
-}
-
 .offer__holder {
 	padding-top: 168px;
 }
@@ -71,6 +65,7 @@
 .profession__holder {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -114,6 +109,7 @@
 
 .profession__counters {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	flex-direction: row;
 	justify-content: space-around;
@@ -130,6 +126,7 @@
 .profession__cards {
 	margin-top: 168px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	color: #19191c;
 	gap: 20px;
@@ -176,14 +173,15 @@
 
 .prices__cards {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	flex-wrap: nowrap;
 	gap: 20px;
 	margin-top: 105px;
 }
 
 .pricesCard {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	align-items: flex-start;
 	padding: 54px 50px 54px 69px;
@@ -254,4 +252,64 @@
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 26px;
+}
+
+@media screen and (max-width: 860px) {
+	.prices,
+	.profession {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.offer__holder {
+		padding-top: 30px;
+	}
+
+	.profession__counters {
+		justify-content: center;
+		display: flex;
+		gap: 12px;
+		flex-direction: column;
+	}
+
+	.professionCounter {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.profession__cards {
+		margin-top: 50px;
+	}
+
+	.prices__cards {
+		margin-top: 50px;
+	}
+
+	.pricesCard {
+		padding: 35px 25px;
+		align-items: center;
+		min-height: 635px;
+	}
+
+	.pricesCard__button {
+		width: 100%;
+	}
+
+	.pricesCard__footer {
+		width: 100%;
+	}
+
+	.pricesCard__discount {
+		margin-bottom: 12px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.offer {
+		background-image: url("../img/designer.png");
+		background-position: 133% 100%;
+		padding-bottom: 195px;
+	}
 }

@@ -2,14 +2,6 @@
 	padding-top: 188px;
 }
 
-.offer:before {
-	content: url("../img/background_gradient.png");
-	position: absolute;
-	right: 0px;
-	z-index: -1;
-	top: 155px;
-}
-
 .offer__marketer {
 	right: 0px;
 	top: 237px;
@@ -81,6 +73,7 @@
 
 .learn__counters {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 86px;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -89,6 +82,7 @@
 
 .learn__counter-item {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	border-bottom: 4px solid #efeff2;
 	padding-bottom: 20px;
@@ -114,6 +108,7 @@
 
 .discover__list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 53px;
 	list-style: none;
 }
@@ -145,7 +140,8 @@
 
 .discover__cards {
 	display: flex;
-	gap: 20px;
+	flex-wrap: wrap;
+	gap: 5px;
 	justify-content: space-between;
 }
 
@@ -176,6 +172,7 @@
 
 .find-program__container {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 10px;
 }
 
@@ -184,7 +181,6 @@
 	flex-wrap: wrap;
 	flex-direction: column;
 	text-align: left;
-	max-width: 50%;
 	flex: 1;
 }
 
@@ -218,4 +214,94 @@
 	background-color: #19191c;
 	padding: 12px 35px;
 	margin-top: 63px;
+}
+
+@media screen and (max-width: 860px) {
+	.offer__holder {
+		padding-top: 30px;
+	}
+
+	.learn {
+		padding: 30px 0 30px;
+	}
+
+	.learn__container {
+		gap: 50px;
+	}
+
+	.learn__counters {
+		justify-content: center;
+	}
+
+	.learn__counter-item {
+		align-items: center;
+	}
+
+	.discover {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.discover__list {
+		gap: 20px;
+	}
+
+	.discover__menu {
+		flex-direction: column;
+		margin-bottom: 20px;
+	}
+
+	.discover__seeMore {
+		justify-content: flex-end;
+	}
+
+	.discover__card-item img {
+		margin-bottom: 6px;
+	}
+
+	.discover__card-title {
+		margin-bottom: 6px;
+	}
+
+	.find-program {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.discover__cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.discover__card-item {
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 860px) and (max-width: 1044px) {
+	.discover__cards {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 50px;
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	.discover__seeMore {
+		margin-top: 12px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.offer::before {
+		content: url("../img/background_gradient.png");
+		position: absolute;
+		right: 0px;
+		z-index: -1;
+		top: 155px;
+	}
+
+	.find-program__text {
+		max-width: 50%;
+	}
 }
