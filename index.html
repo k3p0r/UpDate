@@ -14,42 +14,37 @@
 	<body>
 		<header class="container header">
 			<div class="header_box">
-				<a href="./index.html" class="logo">
-					<img src="./svg/logo.svg" alt="logo" />
+				<a href="./index.html" class="logo" aria-label="Go to homepage">
+					<img src="./svg/logo.svg" alt="UpDate Logo" />
 					UpDate
 				</a>
-				<nav class="nav">
+				<nav class="nav" role="navigation" aria-label="Main navigation">
 					<ul class="nav__list">
 						<li>
-							<a class="link" href="#">Courses</a>
-							<img src="./svg/iconArrowDown.svg" alt="icon courses" />
+							<a class="link" href="#" aria-label="View Courses" aria-current="page">
+								Courses
+								<img src="./svg/iconArrowDown.svg" alt="icon courses"
+							/></a>
 						</li>
-						<li>
-							<a class="link" href="#">Teachers</a>
-						</li>
-						<li>
-							<a class="link" href="#">Blog</a>
-						</li>
+						<li><a class="link" href="#" aria-label="Meet our Teachers">Teachers</a></li>
+						<li><a class="link" href="#" aria-label="Read our Blog">Blog</a></li>
 					</ul>
 				</nav>
 			</div>
 			<div class="button__box">
-				<a class="header__link" href="#">
+				<a class="header__link" href="#" aria-label="Change language">
 					En
 					<img src="./svg/iconArrowDown.svg" alt="icon change language" />
 				</a>
-				<a class="header__link" href="#">Sign In</a>
-				<a class="header__button" href="#" role="button">Trial free</a>
+				<a class="header__link" href="#" aria-label="Sign in to your account">Sign In</a>
+				<a class="header__button" href="#" role="button" aria-label="Start a free trial" tabindex="0">Trial free</a>
 			</div>
 		</header>
 		<main>
 			<section class="offer container">
 				<div class="offer__holder">
 					<h1 class="offer__title">Explore thousands of hands-on creative classes.</h1>
-					<p class="offer__description">
-						Start learning for
-						<a href="#" class="offer__link">free</a>
-					</p>
+					<p class="offer__description">Start learning for <a href="#" class="offer__link">free</a></p>
 					<button class="offer__button">Choose a course</button>
 					<h2 class="section__title offer__sale">50%</h2>
 					<h3 class="offer__time">
@@ -164,9 +159,9 @@
 						<h3 class="find-program__description">We will help you with the choice!</h3>
 					</div>
 					<form action="https://fom.in.ua/echo" class="find-program__form">
-						<input class="find-program__input" type="text" id="name" name="name" placeholder="Name" required />
-						<input class="find-program__input" type="email" id="email" name="email" placeholder="Email" required />
-						<button type="submit" class="find-program__button">Help me</button>
+						<input class="find-program__input" type="text" id="name" name="name" placeholder="Name" required aria-label="Enter your name" />
+						<input class="find-program__input" type="email" id="email" name="email" placeholder="Email" required aria-label="Enter your email" />
+						<button type="submit" class="find-program__button" aria-label="Submit request for help">Help me</button>
 					</form>
 				</div>
 			</section>
@@ -174,12 +169,12 @@
 		<footer class="footer">
 			<div class="container footer__content">
 				<address class="footer__address">
-					<a class="footer__logo-link" href="./index.html">
+					<a class="footer__logo-link" href="./index.html" aria-label="Go to homepage">
 						<img src="./svg/logo__white.svg" alt="logo" />
 						<span class="footer__logo-text">UpDate</span>
 					</a>
-					<a class="footer__contact-link" href="mailto:support@update.com">support@update.com</a>
-					<a class="footer__contact-link" href="tel:+12136771024">+1 (213) 677 10 24</a>
+					<a class="footer__contact-link" href="mailto:support@update.com" aria-label="Contact support via email">support@update.com</a>
+					<a class="footer__contact-link" href="tel:+12136771024" aria-label="Call support">+1 (213) 677 10 24</a>
 				</address>
 				<div class="sitemap">
 					<h6 class="sitemap__title">Courses</h6>
@@ -236,7 +231,7 @@
 							<a class="footer__link" class="footer__link" href="#">English</a>
 						</li>
 						<li class="footer__item">
-							<a class="footer__link" class="footer__link" ="#">French</a>
+							<a class="footer__link" class="footer__link" href="#">French</a>
 						</li>
 						<li class="footer__item">
 							<a class="footer__link" class="footer__link" href="#">Russian</a>

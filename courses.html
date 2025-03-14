@@ -14,32 +14,30 @@
 	<body>
 		<header class="container header">
 			<div class="header_box">
-				<a href="./index.html" class="logo">
-					<img src="./svg/logo.svg" alt="logo" />
+				<a href="./index.html" class="logo" aria-label="Go to homepage">
+					<img src="./svg/logo.svg" alt="UpDate Logo" />
 					UpDate
 				</a>
-				<nav class="nav">
+				<nav class="nav" role="navigation" aria-label="Main navigation">
 					<ul class="nav__list">
 						<li>
-							<a class="link" href="#">Courses</a>
-							<img src="./svg/iconArrowDown.svg" alt="icon courses" />
+							<a class="link" href="#" aria-label="View Courses" aria-current="page">
+								Courses
+								<img src="./svg/iconArrowDown.svg" alt="icon courses"
+							/></a>
 						</li>
-						<li>
-							<a class="link" href="#">Teachers</a>
-						</li>
-						<li>
-							<a class="link" href="#">Blog</a>
-						</li>
+						<li><a class="link" href="#" aria-label="Meet our Teachers">Teachers</a></li>
+						<li><a class="link" href="#" aria-label="Read our Blog">Blog</a></li>
 					</ul>
 				</nav>
 			</div>
 			<div class="button__box">
-				<a class="header__link" href="#">
+				<a class="header__link" href="#" aria-label="Change language">
 					En
 					<img src="./svg/iconArrowDown.svg" alt="icon change language" />
 				</a>
-				<a class="header__link" href="#">Sign In</a>
-				<a class="header__button" href="#" role="button">Trial free</a>
+				<a class="header__link" href="#" aria-label="Sign in to your account">Sign In</a>
+				<a class="header__button" href="#" role="button" aria-label="Start a free trial" tabindex="0">Trial free</a>
 			</div>
 		</header>
 		<main>
@@ -52,7 +50,7 @@
 						You will learn how to create a brand identity on the web and for printing. Learn how to work in Illustrator, Photoshop, InDesign and Figma. Add posters,
 						logos, merch design and other strong projects to your portfolio. Start a career in the studio or freelance.
 					</p>
-					<button class="offer__button">Started</button>
+					<button class="offer__button" aria-label="Start the course" tabindex="0">Started</button>
 					<h2 class="section__title offer__sale">25%</h2>
 					<h3 class="offer__time">
 						<time datetime="P17DT17H44M16S">17 Days 17:44:16</time>
@@ -190,7 +188,7 @@
 			<div class="container footer__content">
 				<address class="footer__address">
 					<a class="footer__logo-link" href="./index.html">
-						<img src="./svg/logo__white.svg" alt="logo" />
+						<img src="./svg/logo__white.svg" alt="UpDate Logo" />
 						<span class="footer__logo-text">UpDate</span>
 					</a>
 					<a class="footer__contact-link" href="mailto:support@update.com">support@update.com</a>
